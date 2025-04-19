@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Gallery</title>
+    <style>
+        .navbar {
+            background-color: #6B4E71;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            padding: 5px 0;
+            border-radius: 10px;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        .navbar a:hover {
+            background-color: rgba(46, 29, 46, 0.788);
+            border-radius: 10px;
+        }
+        .h{
+       color:#6B4E71; 
+    }
+    .footer {
+    background-color: #6B4E71;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+.footer a {
+    display: block;
+}
+.social-icon {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+.rating {
+            direction: rtl; /* Right-to-left for the stars */
+            font-size: 40px;
+        }
+        .rating input {
+            display: none;
+        }
+        .rating label {
+            color: #ccc; /* Light gray for unselected stars */
+            cursor: pointer;
+        }
+        .rating input:checked ~ label {
+            color: gold; /* Gold color for selected stars */
+        }
+        .rating input:checked + label {
+            color: gold;
+        }
+    </style>
+</head>
+<body bgcolor="#F6E9E9">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about-me.html">About Me</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+<center><h1 class="h">My Gallery</h1></center>
+
+<table border="0" cellspacing="10">
+  <tr>
+    <td>
+      <figure>
+        <img src="./Images/1.avif" alt="Hajj in Makkah" width="400px" height="400">
+        <figcaption>Performing Hajj in Makkah – A spiritual journey.</figcaption>
+      </figure>
+    </td>
+    <td>
+        <figure>
+          <img src="./Images/5.jpg" alt="Quran recitation" width="400px" height="400">
+          <figcaption>Reciting the Holy Quran – A source of guidance and peace.</figcaption>
+        </figure>
+      </td>
+   
+    <td>
+      <figure>
+        <img src="./Images/3.avif" alt="Coding screen" width="400px" height="400">
+        <figcaption>My journey into web development and tech.</figcaption>
+      </figure>
+    </td>
+  </tr>
+
+  <tr>
+    <td>
+      <figure>
+        <img src="./Images/4.avif" alt="Study desk" width="400px" height="400">
+        <figcaption>Peaceful study desk – My creative and calm zone.</figcaption>
+      </figure>
+    </td>
+    <td>
+        <figure>
+          <img src="./Images/2.jpg" alt="Horse running" width="400px" height="400">
+          <figcaption>A beautiful horse – Symbol of freedom and power.</figcaption>
+        </figure>
+      </td>
+   
+    <td>
+      <figure>
+        <img src="./Images/ac.avif" alt="Arabic Calligraphy" width="400px" height="400">
+        <figcaption>Arabic Calligraphy – A graceful blend of art and faith.</figcaption>
+      </figure>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <figure>
+        <img src="./Images/19.jpg" alt="Painting art" width="400px" height="400">
+        <figcaption>Expressing creativity through colorful painting.</figcaption>
+      </figure>
+    </td>
+    <td>
+      <figure>
+        <img src="./Images/20.webp" alt="Cooking food" width="400px" height="400">
+        <figcaption>Cooking delicious meals – A tasty form of love.</figcaption>
+      </figure>
+    </td>
+    <td>
+      <figure>
+        <img src="./Images/21.avif" alt="Playing games on phone" width="400px" height="400">
+        <figcaption>Relaxing moments playing fun games on my phone.</figcaption>
+      </figure>
+    </td>
+  </tr>
+</table>
+<p align="center"><a href="index.html">Back to Home Page</a></p>
+<br>
+<center>
+    <h2>Rate My Site</h2>
+    <form action="">
+        <div class="rating">
+            <!-- 5 Star Rating -->
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">★</label>
+
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">★</label>
+
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">★</label>
+
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">★</label>
+
+            <input type="radio" id="star1" name="rating" value="1">
+            <label for="star1">★</label>
+        </div>
+    </form>
+</center>
+
+<footer class="footer">
+    <a href="mailto:youremail@example.com" target="_blank">
+        <img src="./Images/g.webp" alt="Gmail" class="social-icon">
+    </a>
+    <a href="https://x.com/JuwairiaRafi" target="_blank">
+        <img src="./Images/x.webp" alt="Twitter" class="social-icon">
+    </a>
+    <a href="https://www.linkedin.com/in/juwairia-rafi-b26705196/" target="_blank">
+        <img src="./Images/li.webp" alt="LinkedIn" class="social-icon">
+    </a>
+
+    <a href="https://www.facebook.com/juwairia.rafi.2025" target="_blank">
+        <img src="./Images/f.webp" alt="Facebook" class="social-icon">
+    </a>
+</footer>
+</body>
+</html>
