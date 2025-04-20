@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contact Me</title>
+    <style>
+        .navbar {
+            background-color: #6B4E71;
+            overflow: hidden;
+            display: flex;
+            justify-content: space-around;
+            padding: 5px 0;
+            border-radius: 10px;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-size: 25px;
+        }
+        .navbar a:hover {
+            background-color: rgba(46, 29, 46, 0.788);
+            border-radius: 10px;
+        }
+        .my-table {
+            width: 62%;
+            border-color: #6B4E71;
+            border-radius: 15px;
+            margin: 0px;
+            background-color: ;
+        }
+        .my-table th, .my-table td {
+            padding: 10px;
+        }
+        .h{
+       color:#6B4E71; 
+    }
+    .footer {
+    background-color: #6B4E71;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    padding: 5px 0;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+.footer a {
+    display: block;
+}
+.social-icon {
+    width: 35px;
+    height: 35px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+    </style>
+</head>
+<body bgcolor="#F6E9E9">
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="about-me.html">About Me</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+    </div>
+
+    <center>
+        <h1 class="h">Contact Me</h1>
+        <form action="#" method="post"> 
+            <div class="my-table">
+                <font size="5px">
+                    <table class="my-table" border="5">
+                        <tr>
+                            <td><font>Name:</font></td>
+                            <td><input type="text" id="first" name="first" placeholder="Enter your first name" required></td>
+                        </tr>
+                        <tr>
+                            <td><font>Email:</font></td>
+                            <td><input type="email" id="email" name="email" placeholder="Enter your Email" required></td>
+                        </tr>
+                        <tr>
+                            <td><font>Message:</font></td>
+                            <td><textarea id="message" name="message" rows="5" cols="30" required>Enter your message here</textarea></td>
+                        </tr>
+                        <tr>
+                            <td><font>Select your gender</font></td>
+                            <td>
+                                <input type="radio" id="female" name="gender" value="Female" required>
+                                <label for="female">Female</label>
+                                <input type="radio" id="male" name="gender" value="Male" required>
+                                <label for="male">Male</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><font>Your Interests:</font></td>
+                            <td>
+                                <input type="checkbox" id="web" name="interests" value="Web Design">
+                                <label for="web">Web Design</label><br>
+                        
+                                <input type="checkbox" id="graphic" name="interests" value="Graphic Design">
+                                <label for="graphic">Graphic Design</label><br>
+                        
+                                <input type="checkbox" id="python" name="interests" value="Python">
+                                <label for="python">Python</label><br>
+                        
+                                <input type="checkbox" id="cpp" name="interests" value="C++">
+                                <label for="cpp">C++</label><br>
+                        
+                                <input type="checkbox" id="java" name="interests" value="Java">
+                                <label for="java">Java</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <center><input type="submit" value="Submit"></center>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <p> You can also email me directly at 
+                                    <a href="mailto:juwairiarafi@gmail.com">juwairiarafi@gmail.com</a>
+                                </p>
+                            </td>
+                        </tr>
+                    </table>
+                </font>
+            </div>
+        </form> 
+    </center>
+    <footer class="footer">
+        <a href="mailto:youremail@example.com" target="_blank">
+            <img src="./Images/g.webp" alt="Gmail" class="social-icon">
+        </a>
+        <a href="https://x.com/JuwairiaRafi" target="_blank">
+            <img src="./Images/x.webp" alt="Twitter" class="social-icon">
+        </a>
+        <a href="https://www.linkedin.com/in/juwairia-rafi-b26705196/" target="_blank">
+            <img src="./Images/li.webp" alt="LinkedIn" class="social-icon">
+        </a>
+    
+        <a href="https://www.facebook.com/juwairia.rafi.2025" target="_blank">
+            <img src="./Images/f.webp" alt="Facebook" class="social-icon">
+        </a>
+    </footer>
+</body>
+</html>
